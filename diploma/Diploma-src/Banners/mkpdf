@@ -1,0 +1,7 @@
+#! /bin/sh
+for i in *.dvi; do
+  N=`basename ${i} .dvi`
+  dvips ${i} -o ${N}.ps
+  ps2pdf ${N}.ps ${N}.pdf
+done
+

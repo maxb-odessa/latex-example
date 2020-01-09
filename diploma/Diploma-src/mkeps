@@ -1,0 +1,7 @@
+#! /bin/sh
+for i in *.fig; do
+  N=`basename ${i} .fig`
+  transfig -L eps ${i}
+  make ${N}.eps
+done
+

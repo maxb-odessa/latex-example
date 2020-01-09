@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          D I P L O M A (main part)                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\documentclass[12pt,centerh1,a4paper]{report}
+\documentclass[11pt,a4paper,oneside,openany]{report}
+\hyphenation{russian}
+\usepackage[T2A]{fontenc}
+\usepackage[koi8-ru]{inputenc}
+\usepackage[russianb]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%
+\hsize 16cm
+\vsize 25cm
+\tolerance=9900
+\topmargin 0cm
+\headheight 0.5 cm
+\headsep 1.0cm
+\textheight 22cm
+\textwidth 15cm
+\linespread{1.3}
+%
+\begin{document}
+%
+%
+%
+\cyr
+%%%%%%%%%%%%%%%%%%%
+% TITLE PAGE
+%%%%%%%%%%%%%%%%%%%
+\input{diploma-titlepage.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% CONTENT
+%%%%%%%%%%%%%%%%%%%
+\Large
+\tableofcontents
+%
+%
+%%%%%%%%%%%%%%%%%%
+% PREABLE
+%%%%%%%%%%%%%%%%%%
+\chapter{Введение}
+\input{diploma-intro.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% ABERRATIONS
+%%%%%%%%%%%%%%%%%%%
+\chapter{Аберрации оптических систем}
+\input{diploma-aberrations.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% SYSTEMS OVERVIEW
+%%%%%%%%%%%%%%%%%%%
+\chapter[Обзор и анализ линзовых корректоров]{Краткий 
+обзор и сравнительный анализ зеркальных систем с корректорами}
+\input{diploma-overview.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% MATH APPARATUS
+%%%%%%%%%%%%%%%%%%%
+\chapter[Математический аппарат]{Математический
+аппарат расчета оптических систем \cite{rosa}}
+\input{diploma-theory.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% RESULTS
+%%%%%%%%%%%%%%%%%%%
+\chapter[Рассчет корректоров]{Рассчет и анализ корректоров}
+\input{diploma-results.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% CONCLUSION
+%%%%%%%%%%%%%%%%%%%
+\chapter{Заключение}
+\input{diploma-conclusion.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY
+%%%%%%%%%%%%%%%%%%%
+\input{diploma-books.tex}
+%
+%
+%%%%%%%%%%%%%%%%%%%
+% APPENDIX
+%%%%%%%%%%%%%%%%%%%
+%\input{diploma-appendix.tex}
+%
+%
+\end{document}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          D I P L O M A    E N D S                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
